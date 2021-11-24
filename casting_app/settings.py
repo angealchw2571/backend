@@ -175,5 +175,6 @@ SIMPLE_JWT = {
     'BLACKLIST_AFTER_ROTATION': True,
 }
 
+ALLOWED_HOSTS = ['*']
 
 django_heroku.settings(locals())
