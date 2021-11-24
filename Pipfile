@@ -13,6 +13,7 @@ django-seed = "*"
 gunicorn = "*"
 django-heroku = "*"
 python-decouple = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
