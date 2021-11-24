@@ -67,6 +67,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
@@ -178,6 +179,7 @@ SIMPLE_JWT = {
 }
 
 ALLOWED_HOSTS = ['*']
+
 CORS_ORIGIN_ALLOW_ALL = True
 
 django_heroku.settings(locals())
