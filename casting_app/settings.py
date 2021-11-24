@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'django_seed',
     'rest_framework_simplejwt.token_blacklist',
-    'users'
+    'users',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -65,6 +66,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
@@ -176,5 +178,6 @@ SIMPLE_JWT = {
 }
 
 ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_ALLOW_ALL = True
 
 django_heroku.settings(locals())
